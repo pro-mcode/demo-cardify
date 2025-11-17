@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-gray-100;
+}
+@layer base {
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    -webkit-text-fill-color: currentColor !important;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: currentColor;
+  }
+}
+@layer components {
+  .gradient-text {
+    background: linear-gradient(
+      to top right,
+      hsl(249, 99%, 64%),
+      hsl(278, 94%, 30%),
+      hsl(300, 76%, 45%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.disclaimer,
+.payment-btn {
+  background: linear-gradient(
+    to top right,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%),
+    hsl(300, 76%, 45%)
+  );
+}
+.global-container {
+  @apply flex flex-col max-w-[1440px] mx-auto relative;
+}
+.landing-page-component {
+  @apply flex flex-col  min-h-screen;
+}
+.landing-page-right-container {
+  @apply flex flex-col my-12 min-h-screen lg:ml-[20rem] md:ml-[30%] md:my-0;
+}
+/* .landing-page-dashboard-wrapper {
+  @apply relative flex flex-col justify-start items-center min-h-fit mx-auto md:h-screen mb-20 md:mb-0 w-full lg:justify-center;
+} */
+.payment-method-right-container {
+  @apply flex flex-col my-12 min-h-screen lg:ml-[38%] lg:my-0;
+}
+.payment-method-form-container {
+  @apply relative flex flex-col justify-start items-center min-h-fit mx-auto md:h-screen mb-20 md:mb-0 w-full lg:justify-center;
+}
