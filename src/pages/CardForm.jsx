@@ -26,7 +26,7 @@ export default function CardForm({
   const [isSubmited, setIsSubmited] = useState(false);
 
   return (
-    <div className="reltive flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row max-h-fit">
       {/* LEFT SIDE BACKGROUND (Desktop Only) */}
       <DesktopBackground />
 

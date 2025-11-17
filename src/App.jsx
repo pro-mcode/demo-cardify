@@ -82,7 +82,7 @@ function App() {
   }, []);
 
   const addCard = (newCard) => {
-    setCards((prev) => [...prev, newCard]);
+    setCards((prev) => [newCard, ...prev]);
   };
 
   return (
@@ -125,15 +125,6 @@ function App() {
         <Route
           path="/CardDashboard/:cardId"
           element={
-            // <CardDashboard
-            //   cards={cards}
-            //   cardLogos={cardLogos}
-            //   cardNicknames={cardNicknames}
-            //   cardNicknamesDefault={cardNicknamesDefault}
-            //   updateNickname={updateNickname}
-            //   removeCard={removeCard}
-            //   updateCard={updateCard}
-            // />
             <CardDashboard
               cards={cards}
               cardLogos={cardLogos}

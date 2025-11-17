@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="mt-10 px-4 lg:ml-[20rem] md:ml-[30%]">
+    <div className="mt-10 px-4 w-full">
       <div className=" border-t-2 border-gray-200 "></div>
 
       <div className="pt-4 space-y-4 flex flex-col md:inline-block md:space-y-0">

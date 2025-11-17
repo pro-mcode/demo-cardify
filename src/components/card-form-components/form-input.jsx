@@ -802,11 +802,12 @@ export default function FormInput({
       cardNumber,
       expMM,
       expYY,
+      cvc,
       brand: getCardBrand(cardNumber),
     };
 
     const existing = JSON.parse(localStorage.getItem("cards")) || [];
-    const updated = [...existing, newCard];
+    const updated = [newCard, ...existing];
     localStorage.setItem("cards", JSON.stringify(updated));
 
     addCard(newCard);
