@@ -35,6 +35,7 @@ export default function FlipCard({ card, cardLogos }) {
             style={{
               backfaceVisibility: "hidden",
               WebkitBackfaceVisibility: "hidden",
+              transform: "rotateY(0deg)",
             }}
           >
             {/* card logo  */}
@@ -86,6 +87,7 @@ export default function FlipCard({ card, cardLogos }) {
             style={{
               backfaceVisibility: "hidden",
               WebkitBackfaceVisibility: "hidden",
+              transform: "rotateY(180deg)",
             }}
           >
             <img
