@@ -1,8 +1,11 @@
 import cardImage from "../../../public/assets/images/bg-card-front.png";
 import cardImageBack from "../../../public/assets/images/bg-card-back.png";
 import cardLogo from "../../../public/assets/images/card-logo.svg";
+import { useState } from "react";
 
 export default function FlipCard({ card, cardLogos }) {
+  const [flipped, setFlipped] = useState(false);
+
   function formatCardNumber(number) {
     const cleaned = number.replace(/\D/g, "").slice(0, 16); // only digits
     return cleaned.replace(/(.{4})/g, "$1 ").trim();
@@ -10,16 +13,22 @@ export default function FlipCard({ card, cardLogos }) {
   return (
     <>
       <div
-        className={`relative flex-col justify-center items-center h-full md:min-w-[100%] max-w-[20rem] mx-auto mb-6 group inline-block 
+        onClick={() => setFlipped((f) => !f)}
+        className={`relative flex-col justify-center items-center h-full md:min-w-[100%] max-w-[20rem] mx-auto mb-6 group inline-block
   hover:shadow-2xl hover:shadow-purple-300/30
-  transition-all duration-1000 hover:-translate-y-2`}
+  transition-all duration-1000 hover:-translate-y-2 cursor-pointer`}
         style={{ perspective: 1000 }}
       >
+        {/* Hover message */}
+        <span className="absolute top-[-1rem] left-1/2 -translate-x-1/2 text-sm text-white bg-purple-950 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
+          Click card to flip
+        </span>
+
         {/* inner card that will rotate on group hover */}
         <div
           className={
-            "relative transition-transform duration-1000 " +
-            "[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)_rotateX(5deg)] duration-1000"
+            "relative transition-transform duration-1000 [transform-style:preserve-3d] " +
+            (flipped ? "[transform:rotateY(180deg)_rotateX(5deg)]" : "")
           }
         >
           <div

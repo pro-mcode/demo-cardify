@@ -83,7 +83,6 @@ export default function CardDashboard({
                 // src="assets/images/transactions_empty_2.svg"
                 alt="transaction-empty"
               />
-              <img src="assets/" alt="" srcset="" />
               <span className="text-black text-lg font-normal text-center">
                 No transactions to show
               </span>
