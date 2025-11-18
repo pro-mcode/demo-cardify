@@ -353,7 +353,7 @@ export default function Feedback({ setFeedback }) {
 
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-white fixed right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] min-h-screen overflow-y-scroll max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between custom-scroll md:rounded-l-md"
+        className="bg-white absolute right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] min-h-screen overflow-y-auto max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between custom-scroll md:rounded-l-md border border-red-400"
       >
         <div className="">
           {/* Header */}

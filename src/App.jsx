@@ -86,7 +86,7 @@ function App() {
   };
 
   return (
-    <div className="relative global-container max-w-[1440px]">
+    <div className="relative global-container max-w-[1440px] custom-scroll">
       <Routes>
         <Route
           path="/"

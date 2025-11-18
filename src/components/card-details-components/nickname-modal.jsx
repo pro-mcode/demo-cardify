@@ -138,7 +138,7 @@ export default function NickNameModal({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-white fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base font-medium z-20 p-8 rounded-3xl w-[480px] max-w-full shadow-md"
+        className="bg-white fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base font-medium z-20 p-8 rounded-3xl w-[480px] max-w-[90%] shadow-md"
       >
         <div className="flex flex-col justify-center items-center">
           <i className="fa-solid fa-user-pen text-button text-2xl mb-4"></i>
