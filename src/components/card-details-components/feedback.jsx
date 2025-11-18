@@ -421,7 +421,7 @@ export default function Feedback({ setFeedback }) {
             </label>
             <input
               type="text"
-              className={`text-base border rounded-md w-full h-12 mt-2 p-2 outline-none focus:border-button ${
+              className={`text-base border rounded-md w-full h-12 mt-2 p-2 lowercase outline-none focus:border-button ${
                 errors.email ? "border-red-500" : "border-button"
               }`}
               value={email}
