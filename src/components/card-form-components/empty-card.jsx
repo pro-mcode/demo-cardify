@@ -4,7 +4,7 @@ export default function EmptyCard() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-4 flex-1 px-6 text-center min-h-screen -mt-">
+    <div className="flex flex-col justify-center items-center space-y-4 flex-1 px-6 text-center min-h-screen py-8">
       <img
         src="assets/images/empty-payment-method.svg"
         alt="empty-payment-method"

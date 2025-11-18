@@ -44,7 +44,7 @@ export default function CardForm({
       />
 
       {/* RIGHT SIDE CONTENT */}
-      <div className="payment-method-right-container md:h-screen lg:overflow-auto lg:scrollbar-none custom-scroll">
+      <div className="payment-method-right-container md:h-screen">
         {/* <!-- Form Container --> */}
         <div className="payment-method-form-container">
           {/* <!-- Form --> */}
