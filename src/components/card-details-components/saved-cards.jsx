@@ -8,9 +8,9 @@ export default function SavedCards({
   const navigate = useNavigate();
 
   return (
-    <div className="payment-method-wrapper bg-white rounded-3xl p-4 my-8 md:p-6">
+    <div className="payment-method-wrapper bg-white mt-6 rounded-3xl p-4 md:p-6">
       {/* <!-- card details container --> */}
-      <div className="max-h-[30rem] overflow-y-scroll">
+      <div className="max-h-[30rem] overflow-y-scroll custom-scroll">
         {cards.map((card) => (
           <a
             key={card.id}

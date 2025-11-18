@@ -29,8 +29,9 @@ export default function CardDashboard({
 
   return (
     <div className="flex flex-col lg:flex-row">
+      <title>Card Dashboard</title>
       {/* LEFT SIDE BACKGROUND (Desktop Only) */}
-      <div className="hidden lg:block fixed left-0 top-0 h-full lg:max-w-[20%]">
+      <div className="hidden lg:block absolute left-0 top-0 h-screen lg:max-w-[20%]">
         <img
           src={bgDesktop}
           alt="background"
@@ -39,7 +40,7 @@ export default function CardDashboard({
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="relative flex flex-col justify-center items-start min-h-fit my-12 w-[90%] mx-auto md:max-h-screen md:mt-20 md:mb-10  md:px-4 lg:ml-[20%]">
+      <div className="relative flex flex-col items-start pt-12 w-[90%] mx-auto md:py-12 md:px-4 lg:ml-[20%] md:max-h-screen md:overflow-scroll md:scrollbar-none">
         {/* payment method details */}
         <button
           onClick={() => navigate("/")}

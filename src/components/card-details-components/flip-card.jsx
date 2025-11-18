@@ -6,6 +6,9 @@ import { useState } from "react";
 export default function FlipCard({ card, cardLogos }) {
   const [flipped, setFlipped] = useState(false);
 
+  // Prevent crash on first render when card is undefined
+  if (!card) return null;
+
   function formatCardNumber(number) {
     const cleaned = number.replace(/\D/g, "").slice(0, 16); // only digits
     return cleaned.replace(/(.{4})/g, "$1 ").trim();
@@ -20,7 +23,7 @@ export default function FlipCard({ card, cardLogos }) {
         style={{ perspective: 1000 }}
       >
         {/* Hover message */}
-        <span className="absolute top-[-1rem] left-1/2 -translate-x-1/2 text-sm text-white bg-purple-950 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30">
+        <span className="hidden absolute top-[-1rem] left-1/2 -translate-x-1/2 text-sm text-white bg-purple-950 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 md:block">
           Click card to flip
         </span>
 

@@ -4,7 +4,7 @@ export default function Complete() {
   const navigate = useNavigate();
   return (
     <div
-      className="flex-col justify-center items-center space-y-6 max-w-[80%] mx-auto translate-y-[40%] md:translate-y-[0] pb-12 md:pb-0 lg:ml-[60%] lg:w-full"
+      className="flex flex-col space-y-6 max-w-[80%] mx-auto lg:ml-[60%] lg:w-full"
       id="completed"
     >
       <img

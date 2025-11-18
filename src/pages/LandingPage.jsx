@@ -9,7 +9,7 @@ export default function LandingPage({
   brand,
 }) {
   return (
-    <div className="landing-page-component h-screen">
+    <div className="landing-page-component">
       {/* LEFT SIDE BACKGROUND (Desktop Only) */}
       <div className="hidden md:block absolute left-0 top-0 h-screen  w-[30%] max-w-[20rem]">
         <img
@@ -20,7 +20,7 @@ export default function LandingPage({
       </div>
 
       {/* RIGHT SIDE CONTENT */}
-      <div className="landing-page-right-container md:h-screen overflow-auto scrollbar-none">
+      <div className="landing-page-right-container md:h-screen md:overflow-auto md:scrollbar-none custom-scroll">
         {/* CARD DASHBOARD OR EMPTY CARD */}
         <div className="landing-page-dashboard-wrapper">
           {cards.length === 0 ? (

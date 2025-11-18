@@ -725,7 +725,7 @@ export default function FormInput({
 
   const handleClose = () => setShowDisclaimer(false);
 
-  // ✅ Validate expiry month + year together
+  // Validate expiry month + year together
   const validateExpiry = (month, year) => {
     const errs = { expMM: "", expYY: "" };
     const m = Number(month);
@@ -861,7 +861,7 @@ export default function FormInput({
         {/* Card Number */}
         <label
           htmlFor="card-number"
-          className="text-xs font-medium uppercase mt-4 block"
+          className="text-xs font-medium uppercase mt-4 block mb-[2px]"
         >
           Card number
         </label>

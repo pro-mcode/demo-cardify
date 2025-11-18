@@ -38,18 +38,31 @@ body {
 .global-container {
   @apply flex flex-col max-w-[1440px] mx-auto relative;
 }
+.custom-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #5e2b97;
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .landing-page-component {
   @apply flex flex-col  min-h-screen;
 }
 .landing-page-right-container {
-  @apply flex flex-col my-12 min-h-screen lg:ml-[20rem] md:ml-[30%] md:my-0;
+  @apply flex flex-col md:min-h-screen lg:ml-[20rem] md:ml-[30%] md:my-0;
 }
 /* .landing-page-dashboard-wrapper {
   @apply relative flex flex-col justify-start items-center min-h-fit mx-auto md:h-screen mb-20 md:mb-0 w-full lg:justify-center;
 } */
 .payment-method-right-container {
-  @apply flex flex-col my-12 min-h-screen lg:ml-[38%] lg:my-0;
+  @apply flex flex-col mt-12 lg:ml-[38%] lg:mt-0;
 }
 .payment-method-form-container {
-  @apply relative flex flex-col justify-start items-center min-h-fit mx-auto md:h-screen mb-20 md:mb-0 w-full lg:justify-center;
+  @apply relative flex flex-col justify-start items-center mx-auto lg:h-screen w-full lg:justify-center;
 }

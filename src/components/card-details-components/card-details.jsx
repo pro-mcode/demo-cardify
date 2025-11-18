@@ -18,14 +18,15 @@ export default function CardDetails({
   const [removeCardModal, setRemoveCardModal] = useState(false);
   const [feedback, setFeedback] = useState(false);
 
-  // Use custom nickname if exists, otherwise default brand nickname
-  const [nickname, setNickname] = useState(
-    cardNicknames[card.id] || cardNicknamesDefault[card.brand] || "Democard"
-  );
+  const [nickname, setNickname] = useState(() => {
+    if (!card) return "Democard";
+    return (
+      cardNicknames[card.id] || cardNicknamesDefault[card.brand] || "Democard"
+    );
+  });
 
-  if (!card) return null; // <-- prevents crash
+  if (!card) return null;
 
-  console.log(card);
   return (
     <div className="card-extra-details pb-20">
       {showNicknameModal && (
