@@ -283,8 +283,9 @@ export default function Feedback({ setFeedback }) {
     if (!message.trim()) newErrors.message = "Feedback is required";
     if (!name.trim()) newErrors.name = "Name is required";
     if (!email.trim()) newErrors.email = "Email is required";
-    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))
+    else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
       newErrors.email = "Enter a valid email";
+    }
     if (!agree) newErrors.agree = "You must agree before sending";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -353,7 +354,7 @@ export default function Feedback({ setFeedback }) {
 
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-white absolute right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] min-h-screen overflow-y-auto max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between custom-scroll md:rounded-l-md border border-red-400"
+        className="bg-white absolute right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between md:rounded-l-md h-screen overflow-auto custom-scroll"
       >
         <div className="">
           {/* Header */}

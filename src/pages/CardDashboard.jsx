@@ -46,7 +46,7 @@ export default function CardDashboard({
           onClick={() => navigate("/")}
           className="text-black text-lg font-medium text-left md:text-2xl cursor-pointer"
         >
-          <i className="fa-solid fa-arrow-left mr-2 font-normal text-lg md:text-2xl"></i>
+          <i className="fa-solid fa-arrow-left mr-2 text-lg md:text-2xl"></i>
           Payment method details
         </button>
 

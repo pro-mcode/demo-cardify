@@ -715,6 +715,10 @@ input:-webkit-autofill,
   z-index: 30;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -836,6 +840,10 @@ input:-webkit-autofill,
   margin-top: 2px;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -902,6 +910,11 @@ input:-webkit-autofill,
 
 .h-screen {
   height: 100vh;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .max-h-\[10rem\] {
@@ -1203,6 +1216,14 @@ input:-webkit-autofill,
 
 .justify-self-end {
   justify-self: end;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-auto {
