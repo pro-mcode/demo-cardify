@@ -822,9 +822,12 @@ export default function FormInput({
   };
 
   return (
-    <>
+    <div className="lg:py-12 lg:overflow-auto lg:scrollbar-none custom-scroll">
       {showDisclaimer && <Disclaimer onClose={handleClose} />}
-      <form onSubmit={handleSubmit} className="max-w-[90%] pb-12">
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-[90%] mx-auto pb-12 lg:pb-0"
+      >
         {/* Cardholder Name */}
         <label htmlFor="card-holder" className="text-xs font-medium uppercase">
           Cardholder name
@@ -1005,6 +1008,6 @@ export default function FormInput({
           Confirm
         </button>
       </form>
-    </>
+    </div>
   );
 }

@@ -26,7 +26,7 @@ export default function CardForm({
   const [isSubmited, setIsSubmited] = useState(false);
 
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row lg:overflow-auto lg:scrollbar-none custom-scroll">
       {/* LEFT SIDE BACKGROUND (Desktop Only) */}
       <DesktopBackground />
 
@@ -44,7 +44,7 @@ export default function CardForm({
       />
 
       {/* RIGHT SIDE CONTENT */}
-      <div className="payment-method-right-container">
+      <div className="payment-method-right-container md:h-screen lg:overflow-auto lg:scrollbar-none custom-scroll">
         {/* <!-- Form Container --> */}
         <div className="payment-method-form-container">
           {/* <!-- Form --> */}

@@ -55,7 +55,7 @@ body {
   @apply flex flex-col  min-h-screen;
 }
 .landing-page-right-container {
-  @apply flex flex-col md:min-h-screen lg:ml-[20rem] md:ml-[30%] md:my-0;
+  @apply flex flex-col lg:ml-[20rem] md:ml-[30%] md:my-0 justify-between;
 }
 /* .landing-page-dashboard-wrapper {
   @apply relative flex flex-col justify-start items-center min-h-fit mx-auto md:h-screen mb-20 md:mb-0 w-full lg:justify-center;

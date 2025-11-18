@@ -18,7 +18,7 @@ export default function CardLists({
     setSelectedMethod(null); // reset selection when modal closes
   };
   return (
-    <div className="relative flex flex-col w-[90%] my-12 mx-auto md:min-h-screen md:my-20 md:max-w-[100%]">
+    <div className="relative flex flex-col w-[90%] my-12 mx-auto md:my-20 md:max-w-[100%]">
       <title>Payment Methods</title>
       {/* Pass show & onClose */}
       <PaymentMethodModal

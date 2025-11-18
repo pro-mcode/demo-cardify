@@ -354,13 +354,13 @@ export default function Feedback({ setFeedback }) {
 
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-white absolute right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between md:rounded-l-md h-screen overflow-auto custom-scroll"
+        className="bg-white absolute right-0 top-0 text-black p-6 pb-0 xs:w-full sm:w-[70%] max-w-full md:max-w-[420px] duration-150 shadow-md flex flex-col justify-between md:rounded-l-md max-h-screen overflow-auto custom-scroll"
       >
         <div className="">
           {/* Header */}
           <div
             onClick={handleClose}
-            className="flex justify-between items-center border-b border-gray-200 -mx-6 p-6 pt-0"
+            className="flex justify-between items-center border-b border-gray-200 -mx-6 p-6 pt-0 gap-2"
           >
             <span className="text-lg font-medium">
               Send feedback to the developer

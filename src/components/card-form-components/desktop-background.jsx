@@ -1,6 +1,6 @@
 export default function DesktopBackground() {
   return (
-    <div className="hidden lg:block absolute left-0 top-0 h-full w-[20rem]">
+    <div className="hidden lg:block absolute left-0 top-0 h-screen w-[20rem]">
       <img
         src="assets/images/bg-main-desktop.png"
         alt="background"
