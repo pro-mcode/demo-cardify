@@ -84,10 +84,8 @@ travely-demo
 
 Pages:
 
-- HomePage
-- BlogPage
-- AboutPage
-- GalleryPage
+- CardDashboard
+- InputForm
 
 Core Components:
 
