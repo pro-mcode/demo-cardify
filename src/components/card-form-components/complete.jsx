@@ -14,7 +14,7 @@ export default function Complete() {
       />
       <h3 className="text-3xl text-primary text-center font-medium tracking-widest uppercase">
         Thank You!
-      </h3>http://localhost:5173/assets/images/gallery.webp
+      </h3>
       <p className="text-lg text-center text-gray-500 font-medium tracking-wider">
         We've added your card details
       </p>
