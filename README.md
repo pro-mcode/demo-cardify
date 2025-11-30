@@ -53,7 +53,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/pro-mcode/demo-cardify.git
-cd demo-travely
+cd demo-cardify
 npm install
 ```
 
